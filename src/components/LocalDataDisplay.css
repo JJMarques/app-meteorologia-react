@@ -1,0 +1,33 @@
+.DataDisplayPanel {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .DataDisplayPanel h1 {
+        color: rgb(59, 59, 61);
+        margin-bottom: 1em;
+        font-size: 5em;
+    }
+
+.InfoPanels {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.DayInfoPanel {
+    padding: 2em;
+    border: rgb(113, 255, 132) 1px solid;
+    border-radius: 1em;
+    color: rgb(113, 255, 132);
+}
+
+    .DayInfoPanel span {
+        color: rgb(255, 255, 255);
+        font-size: large;
+    }

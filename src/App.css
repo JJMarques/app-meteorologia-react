@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.App {
+  background: rgb(37, 37, 44);
+  color: white;
+  height: 100vh;
+  display: flex;
+  border: rgb(113, 255, 132) 2px solid;
+}
+
+.App button {
+  background:rgb(37, 37, 44);
+  width: 300px;
+  height: 40px;
+  font-weight: 400;
+  border: rgb(113, 255, 132) 1px solid;
+  color:  rgb(113, 255, 132);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.App button:hover {
+  background: rgb(22, 21, 39);
+  font-style: italic;
+}
+
+.LocalList {
+  display: flex;
+  flex-direction: column;
+}
