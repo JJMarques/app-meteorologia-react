@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchApi = async () => {
       const result = await axios('https://api.ipma.pt/open-data/distrits-islands.json')
-      setLocalList(result.data.data)
+      .then(r => setLocalList(r.data.data))
     }
     fetchApi()
   }, [])

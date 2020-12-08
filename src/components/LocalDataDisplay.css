@@ -25,9 +25,14 @@
     border: rgb(113, 255, 132) 1px solid;
     border-radius: 1em;
     color: rgb(113, 255, 132);
-}
+}   
+
+    .DayInfoPanel h5 {
+        font-weight: 200;
+    }
 
     .DayInfoPanel span {
         color: rgb(255, 255, 255);
         font-size: large;
+        font-weight: 300;
     }

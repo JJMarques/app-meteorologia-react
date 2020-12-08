@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 //Função para formatar a exposição do dia da semana e da data
 export const getWeekDay = (d) => {
     
@@ -64,4 +66,19 @@ export const getWeekDay = (d) => {
         default:
             break;
     }
+}
+
+//Função para devolver dados sobre o estado do vento na data
+export const getWindData = async (windId) => {
+    const res = await axios.get('https://api.ipma.pt/open-data/wind-speed-daily-classe.json')
+    const code = res.data.data
+    let w
+    switch (windId) {
+        case 1:
+            w = `Vento ${code[1].descClassWindSpeedDailyPT}`
+            break
+        default:
+            break;
+    }
+    return w
 }
